@@ -1,0 +1,47 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  background: url("god_of_wine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  margin: 0 auto;
+  max-height: 20em;
+}
+
+nav {
+  width: 100%;
+  padding: .5em;
+  margin: 0 -3em;
+  text-align: right;
+  display: block;
+}
+  
+.black_veil {
+  text-align: center;
+  postion: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  max-width: 100%;
+  height: 50em;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+}

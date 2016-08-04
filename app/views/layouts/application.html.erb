@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ArtPortfolio</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="layout_wrapper">
+      <div class="black_veil">
+        <nav>
+          <%= link_to "Home", home_index_path %>
+          <%= link_to "Art", arts_path %>
+        </nav>
+        <%= yield %>
+      </div>
+    </div>
+
+
+  </body>
+</html>
