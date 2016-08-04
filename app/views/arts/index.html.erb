@@ -1,5 +1,13 @@
 <h1>Hello Art Index</h1>
-<% @art.each do |art| %>
-  <img src="<%=art.file_path %>" alt="painting">
-<% end %>
+<div class="image_index_flex">
+  <div class="row">
+    <% @art.each do |art| %>
+      <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+          <img class="index_image" src="<%=art.file_path %>" alt="painting">
+        </a>
+      </div>
+    <% end %>
+  </div>
+</div>
 
