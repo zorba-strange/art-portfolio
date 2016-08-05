@@ -41,11 +41,16 @@ nav {
   flex-wrap: wrap;
 }
 
-.index_image {
-  margin: 0 .5em;
+.thumbnail {
+  margin: 1em .5em;
 }
 
-.index_image:hover {
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+}
+.thumbnail:hover {
   border: 5px solid violet;
 }
 
