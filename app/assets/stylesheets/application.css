@@ -45,7 +45,36 @@ nav {
   margin: 1em .5em;
 }
 
-img {
+.relative {
+  position: absolute;
+}
+
+/* style for comments hide and show box */
+.right_align{
+  background-color: rgba(0, 0, 0, 0.7);
+  position: ablsolute;
+  color: white;
+  text-align: right;
+}
+
+.more {
+	display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+a.showLink, a.hideLink {
+  height: 10em;
+  width: 5em;
+	text-decoration: none;
+	color: #36f;
+  position: absolute;
+}
+
+.show_img {
+  position: relative;
   max-width: 100%;
   height: auto;
   width: auto\9; /* ie8 */

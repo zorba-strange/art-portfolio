@@ -7,10 +7,30 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // compiled file. JavaScript code in this file should be added after the last require_* statement.
 //
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
+// Read Sprockets README (https://github.com/rails/sprockets#sprockets_directives) for details
 // about supported directives.
 //
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+// show and hide function for comments
+$(document).ready(function(){
+  $('right_align show_comments').click(function(e){
+    e.preventDefauly();
+    $('.comments').toggleClass('hide_comments');
+  });
+});
+// function showHide(shID) {
+// 	if (document.getElementById(shID)) {
+// 		if (document.getElementById(shID+'_show').style.display != 'none') {
+// 			document.getElementById(shID+'_show').style.display = 'none';
+// 			document.getElementById(shID).style.display = 'inline';
+// 		}
+// 		else {
+// 			document.getElementById(shID+'_show').style.display = 'inline';
+// 			document.getElementById(shID).style.display = 'none';
+// 		}
+// 	}
+// }

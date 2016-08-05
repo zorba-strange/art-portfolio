@@ -1,2 +1,14 @@
 <h1 class="index_title">Hello Index Comments</h1>
-<img src="<%= @art.file_path %>" alt="">
+<div class="relative">
+  <img class="show_img" src="<%= @art.file_path %>" alt="">
+  <% @comment.each do |com| %>
+    <div class="right_align">
+      <a href="#" id="comment_show" class="show_comments">Comments</a>
+      <div id="comment" class="more">
+        <p class="comments" ><%= com.message %></p>
+        <a href="#" id="comment_hide" class="hide_comments">Hide Comments</a>
+      </div>
+    </div>
+</div>
+
+<% end %>
