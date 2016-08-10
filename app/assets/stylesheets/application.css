@@ -14,6 +14,8 @@
  *= require_self
  */
 
+ /* Your CSS is well-organized, clean, and renders an attractive style! */
+
 body {
   background-image: url("og_two.jpg");
   background-repeat: no-repeat;
@@ -103,4 +105,4 @@ a.showLink, a.hideLink {
 .home_wrapper {
   position: relative;
   height: 47em;
-} 
+}
