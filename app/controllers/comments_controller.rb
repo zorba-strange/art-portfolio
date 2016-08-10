@@ -6,4 +6,7 @@ class CommentsController < ApplicationController
     @comment = Comment.where(id: @art)
   end
 
+
+  # add CRUD here
+  
 end
